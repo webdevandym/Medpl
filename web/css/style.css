@@ -1,0 +1,360 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.02.2016, 14:07:02
+    Author     : ViktorZ
+*/
+#topmenu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+    height: 108px;
+}
+#topmenu.navbar-default{
+    font-size: 14px;
+    background-color: rgba(18, 61, 114, 1);
+    border-bottom-width: 1px;
+}
+#topmenu.navbar-default .navbar-nav>li>a {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(18, 61, 114, 1);
+}
+#topmenu.navbar-default .navbar-nav>li>a:hover,
+#topmenu .navbar-default .navbar-nav>li>a:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(18, 61, 114, 1);
+}
+#topmenu.navbar-default .navbar-nav>.active>a,
+#topmenu.navbar-default .navbar-nav>.active>a:hover,
+#topmenu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(18, 61, 114, 1);
+}
+#topmenu.navbar-default .navbar-toggle {
+    border-color: #123d72;
+    display: none;
+}
+#topmenu.navbar-default .navbar-toggle:hover,
+#topmenu.navbar-default .navbar-toggle:focus {
+    background-color: #123d72;
+}
+#topmenu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #123d72;
+}
+#topmenu.navbar-default .navbar-toggle:hover .icon-bar,
+#topmenu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #123d72;
+}
+
+#dropmenu > .dropdown{
+    margin-top: 10px;
+}
+
+.navbar{
+    min-height: 40px;
+    margin-bottom: 0px; 
+}
+
+/*.navbar-nav {
+    margin: 0 -35px !important;
+}
+*/
+@media (min-width: 1024px){
+    .navbar-right {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1024px){
+
+    #dropmenu > .dropdown{
+        display: none !important;
+    }
+
+   #input-grp {
+    width: 75% !important;
+    }
+}
+
+.block_1{
+    position: relative;
+     width: 100%;
+     /*background: url(/web/images/banner_edt.jpg);*/
+}
+
+.Img_block{
+    padding:2px 0;
+    position:relative;
+    margin:0 auto;
+    width:81.25%;
+    position:relative;
+    }
+
+.Img_block:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2px;
+}
+#img_bl1{
+        /*margin-top:-2.857em;*/
+        margin: 0 0 0 50%;
+        position: relative;
+    }
+
+.row_text1
+{
+    width:100%;
+    max-width: 350px;
+    padding:25px 0 50px 20px;
+
+}
+
+#titleTxt{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color:#113D73;
+}
+
+#inText1{
+    margin-top: 7px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.28px;
+    color:#113D73;
+}
+
+.content_part2_title, .content_part2_element{
+    border-bottom: 1px solid #d1d1d1;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+    position: relative;
+    color: #113d73;
+}
+
+.content_part2_title{
+    padding-bottom: 35px;
+}
+
+.block2_title,
+.block4_title{
+    display: block;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.3px;
+    color:#113D73;
+    text-align: center;
+    max-width: 900px;
+    margin: 70px auto;
+}
+
+.block3_title{
+    display: block;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.30px;
+    color:#113D73;
+    text-align: center;
+    max-width: 900px;
+    margin: 0px auto;
+}
+.block2_title:after,
+.block3_title:after,
+.block4_title:after{
+    content: "";
+    border-bottom: 3px solid #0099ff;
+    border-radius: 10%;
+    position: absolute;
+    width: 90px;
+    margin-top: 35px;
+    margin-left: -45px;
+    text-align: center;
+}
+
+.imgBlock2{
+    border-radius: 100%;
+    background-color: #cce8fa;
+    max-width: 120px;
+    max-height: 120px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.servList{
+    text-align: center;
+    min-height: 220px;
+    padding-top: 30px;
+}
+
+.subContent{
+    background: #f7f7f7;
+    position: relative;
+    z-index: 998;
+    padding-top: 60px;
+}
+
+
+.content_part3_element{
+    margin-top: 80px; 
+    background: #fff 100% repeat; 
+    border-bottom: 1px solid #d1d1d1;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.part3UpElem1{
+     min-height: 165px;
+    width:100%;
+    background:url('/web/images/bg_1.jpg') right no-repeat ;
+    border-bottom: 1px solid #d1d1d1;
+    /*background-position: ;*/
+    /*background-size: cover;*/
+}
+.part3UpElem2{
+     min-height: 165px;
+    width:100%;
+    background:url('/web/images/bg_2.jpg') right no-repeat ;
+    border-bottom: 1px solid #d1d1d1;
+    /*background-position: ;*/
+    /*background-size: cover;*/
+}
+.part3UpElem3{
+     min-height: 165px;
+    width:100%;
+    background:url('/web/images/bg_3.jpg') right no-repeat ;
+    border-bottom: 1px solid #d1d1d1;
+    /*background-position: ;*/
+    /*background-size: cover;*/
+}
+
+#prt3Title{
+    padding-top: 40px;
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 26px;
+    color:#008ee6;
+    text-transform: uppercase;
+}
+
+#prt3SubTitle{
+    padding-top: 30px;
+    margin-left: 45px;
+    color: #214a7c;
+    font-size: 18px;
+    max-width: 700px;
+}
+
+#prt3SubTitle>b{
+    font-weight: bold;
+}
+
+.SimplPack{
+    zoom:1;
+    min-height: 110px;
+    width: 100%;
+    max-width: 100%;
+    display: table;
+    color: #214a7c;
+    font-size: 16px;
+    line-height: 25px;
+}
+.SimplPack>.part3Elem1,.part3Elem2,.part3Elem3,.part3Elem4,.part3Elem5{
+    /*width: 20%;*/
+    /*float: left;*/
+    padding-right: 25px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.SimplPack>.part3Elem1,.part3Elem2{
+    padding-left: 25px;
+}
+
+#check_mark:before{
+    content: "";
+    height: 17px;
+    width: 17px;
+    margin-left: -27px;
+    margin-top: 4.5px;
+    position: absolute;
+    background-position: center;
+    background: url('/web/images/check_mark.png') no-repeat 100%;
+    /*background-size: cover;  */
+}
+
+#cross_mark:before{
+    content: "";
+    height: 17px;
+    width: 17px;
+    margin-left: -27px;
+    margin-top: 4.5px;
+    position: absolute;
+    background-position: center;
+    background: url('/web/images/cross_mark.png') no-repeat 100%;
+    /*background-size: cover;  */
+}
+
+#bold_text{
+    font-weight: bold;
+}
+
+#titleStyle{
+    color: #4db0ee;
+     text-align: center;
+}
+
+#SummStyle{
+    color:#113d73;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+}
+
+.part3Elem5{
+    width: 15%;
+    margin: 0 auto;
+}
+.buttonElem1{
+    min-width: 100px;
+    min-height: 40px;
+    background: #008ee6;
+    color: white;
+    font-size: 16px ;
+     line-height: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border:none;
+    border-bottom: 4px solid #007ecc;
+}
+.buttonElem1:focus{   
+    background: #008ee6;  
+}
+.buttonElem1:hover,
+.buttonElemSubmit:hover{
+    background: #4db0ee;
+}
+
+#borderBottom{
+    border-bottom: 1px dashed #d1d1d1;
+    width: 95%;
+    margin:0 auto;
+}
+
+.haveQuestion{
+    padding: 35px 60px 25px 0;
+    /*display: block;*/
+    color: #113d73;
+    text-align: right;
+}
+
+.myfooter{
+    min-height: 204px;
+    padding-top: 40px;
+    background: #113d73;
+    position: absolute;
+    width: 100%;
+}
