@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 	minify = require('gulp-minify');
 
 gulp.task('CSS', function () {
-  return gulp.src('web/css/*.css')
+  return gulp.src(['!web/css/bootstrap.css','web/css/*.css',])
     .pipe(concatCss('bundle.css'))
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions', '> 1%' , 'IE 7'],
@@ -26,10 +26,20 @@ gulp.task('uncss',['CSS'], function () {
         .pipe(gulp.dest('web/css/uncss'));
 });
 
-gulp.task('uncssBT', function () {
-    return gulp.src('assets/941fa0c1/css/_bootstrap.css')
+gulp.task('CSSH', function () {
+  return gulp.src('uncss/css/*.css')
+    .pipe(concatCss('bundle.css'))
+	.pipe(autoprefixer({
+		browsers: ['last 2 versions', '> 1%' , 'IE 7'],
+		cascade: false
+	}))
+    .pipe(gulp.dest('uncss/css/concat'));
+});
+
+gulp.task('uncssH',['CSSH'], function () {
+    return gulp.src('uncss/css/concat/bundle.css')
         .pipe(uncss({
-            html: ['touncss.html','touncssBT.html'],
+            html: ['uncss/head.html'],
             ignore: [
                 ".fade",
                 ".fade.in",
@@ -38,11 +48,14 @@ gulp.task('uncssBT', function () {
                 ".collapsing",
                 ".alert-danger",
                 ".open",
-                "/open+/"
+                "/open+/",
+                ".col-xs-6",
+                ".col-sm-4",
+                ".col-md-3"
            ]
         }))
-        .pipe(rename("bootstrap.css"))
-        .pipe(gulp.dest('assets/941fa0c1/css/'));
+        .pipe(rename("slim.css"))
+        .pipe(gulp.dest('uncss/'));
 });
 
 gulp.task('compress', function() {
@@ -115,8 +128,8 @@ gulp.task('compressBT', function() {
     .pipe(gulp.dest('assets/941fa0c1/js/'))
 });
 
-gulp.task('compressJQ', function() {
-  gulp.src('assets/1ba441a5/jquery.js')
+gulp.task('compressYII', function() {
+  gulp.src('CompressJS/*.js')
     .pipe(minify({
         ext:{
             src:'-debug.js',
@@ -147,7 +160,7 @@ gulp.task('compressJQ', function() {
 	},
 	preserveComments: ['all']
     }))
-    .pipe(gulp.dest('assets/1ba441a5/'))
+    .pipe(gulp.dest('CompressJS/task/'))
 });
 
 
